@@ -10,6 +10,16 @@
 	background-size: cover;
 } */
 
+a {
+  text-decoration: none;
+  color: #E5E7EB;
+}
+
+a:hover {
+  opacity: 0.9;
+  color: #3882F6;
+}
+
 
 .header-container {
   background-color: #1f2937;
@@ -25,6 +35,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hero-container {
@@ -41,6 +52,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  justify-content: center;
 }
 
 .header-button {
@@ -54,10 +66,14 @@
 .hero-right-img {
   width: 45%;
   margin: 70px 0 90px;
-  background-color: gray;
   display: flex;  
   justify-content: center;
   align-items: center;
+}
+
+.hero-picture {
+  height: fit-content;
+  align-self: stretch;
 }
 
 
@@ -71,6 +87,11 @@
   font-weight: 800;
 }
 
+.header-logo img {
+  width: 50px;
+  height: 50px;
+}
+
 .header-info,
 .nav-links {
   font-size: 18px;
@@ -79,18 +100,25 @@
 
 .nav-links {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .nav-links li {
   list-style: none;
-
 }
 
 .header-button,
 .contact-button {
   background-color: #3882F6;
   color: #F9FAF8;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.main-info-section {
+  width: 100%;
 }
 
 .main-title h2 {
@@ -101,26 +129,63 @@
 
 .quote-section {
   background-color: #E5E7EB;
+  width: 100%;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+  padding: 60px;
+  margin: 0 auto;
 }
 
 .quote-block {
-  font-size: 36px;
+  font-size: 26px;
   font-weight: lighter;
   font-style: italic;
   color: #1F2937;
+  margin-bottom: 20px;
+}
+
+.quote-author {
+  font-weight: bold;
 }
 
 .contact-us-section {
-  padding: 50px;
   color: #F9FAF8 ;
+  padding: 50px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
 }
 
 .contact-container {
   background-color: #3882F6;
-  padding: 50px
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.contact-button {
+  border-radius: 7px;
+  border: solid 1px white;
+  padding: 1px 30px;
 }
 
 .footer-container {
   background-color: #1f2937;
   color: #F9FAF8 ;
+  width: 100%;
+}
+
+.footer-info {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
 }
